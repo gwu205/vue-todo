@@ -12,6 +12,27 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+      list: [
+        {
+          id: 1,
+          title: "Practice code",
+          completed: false
+        },
+        {
+          id: 2,
+          title: "Buy groceries",
+          completed: false
+        },
+        {
+          id: 3,
+          title: "Go for a run",
+          completed: true
+        }
+      ]
+    }
   }
 }
 </script>
