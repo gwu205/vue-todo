@@ -18,7 +18,7 @@ export default {
         {
           id: 1,
           title: "Practice code",
-          completed: false
+          completed: true
         },
         {
           id: 2,
