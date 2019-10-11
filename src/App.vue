@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Todos :todos="list" />
+    <Todos :todos="todos" v-on:del-todo="deleteTodo" />
   </div>
 </template>
 
@@ -14,11 +14,11 @@ export default {
   },
   data() {
     return {
-      list: [
+      todos: [
         {
           id: 1,
           title: "Practice code",
-          completed: true
+          completed: false
         },
         {
           id: 2,
@@ -28,9 +28,14 @@ export default {
         {
           id: 3,
           title: "Go for a run",
-          completed: true
+          completed: false
         }
       ]
+    }
+  },
+  methods: {
+    deleteTodo(id) {
+      this.todos = this.todos.filter(todo => todo.id !== id)
     }
   }
 }
