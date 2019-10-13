@@ -20,23 +20,7 @@ export default {
   },
   data() {
     return {
-      todos: [
-        {
-          id: 1,
-          title: "Practice code",
-          completed: false
-        },
-        {
-          id: 2,
-          title: "Buy groceries",
-          completed: false
-        },
-        {
-          id: 3,
-          title: "Go for a run",
-          completed: false
-        }
-      ]
+      todos: []
     }
   },
   methods: {
